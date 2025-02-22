@@ -1,0 +1,14 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - "eu-west-2"
+
+filters:
+  "tag:dev":
+    - web
+
+keyed_groups:
+  - key: tags['dev']
+    prefix: "dev"
+
+  - key: tags['OS']
+    prefix: "os"
