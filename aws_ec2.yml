@@ -5,6 +5,7 @@ regions:
 filters:
   "tag:dev":
     - web
+    - app
 
 keyed_groups:
   - key: tags['dev']
