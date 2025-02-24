@@ -3,12 +3,7 @@ regions:
   - "eu-west-2"
 
 filters:
-  "tag:dev":
-    - web
-    - app
-
-  "tag:Name":
-   - prometheus
+ instance-state-name: running
 
 keyed_groups:
   - key: tags['dev']
@@ -17,5 +12,5 @@ keyed_groups:
   - key: tags['OS']
     prefix: "os"
 
-  - key: tags['Name']
-    prefix: ""
+  - key: tags['monitor']
+    prefix: "monitor"
