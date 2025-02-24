@@ -11,6 +11,3 @@ keyed_groups:
 
   - key: tags['OS']
     prefix: "os"
-
-  - key: tags['monitor']
-    prefix: "monitor"
