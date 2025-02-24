@@ -7,8 +7,7 @@ filters:
     - web
     - app
 
-fileter:
- "tag:Name":
+  "tag:Name":
    - prometheus
 
 keyed_groups:
@@ -17,3 +16,6 @@ keyed_groups:
 
   - key: tags['OS']
     prefix: "os"
+
+  - key: tags['Name']
+    prefix: ""
