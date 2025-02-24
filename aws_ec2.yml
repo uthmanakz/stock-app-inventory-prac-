@@ -7,6 +7,10 @@ filters:
     - web
     - app
 
+fileter:
+ "tag:Name":
+   - prometheus
+
 keyed_groups:
   - key: tags['dev']
     prefix: "dev"
