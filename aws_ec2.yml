@@ -3,7 +3,11 @@ regions:
   - "eu-west-2"
 
 filters:
- instance-state-name: running
+ "tag:dev":
+  - web
+  - app
+  - monitor
+
 
 keyed_groups:
   - key: tags['dev']
@@ -11,3 +15,6 @@ keyed_groups:
 
   - key: tags['OS']
     prefix: "os"
+
+groups:
+  dev_nodes: "tags.dev in ['app', 'web']"
